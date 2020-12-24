@@ -7,11 +7,11 @@ node {
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
    // **       in the global configuration.           
-   def mvnHome = tool 'M3'
+   def mvnHome = tool 'Maven 3.6.3'
 
    // Mark the code build 'stage'....
    stage 'Build'
    // Run the maven build
    bat "${M2_HOME}/bin/mvn -Dmaven.test.failure.ignore clean package"
-   step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+   //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 }

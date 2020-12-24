@@ -11,7 +11,7 @@ pipeline {
     }
     stages {
         stage('Checkout'){
-            git url: 'https://github.com/TTFHW/jenkins_pipeline_java_maven.git'
+            //git url: 'https://github.com/TTFHW/jenkins_pipeline_java_maven.git'
             def mvnHome = tool 'Maven 3.6.3'
         }
         stage('Build'){

@@ -5,7 +5,7 @@
 	<artifactId>Test-JenkinsFile</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jenkins_pipeline_java_maven</name>
-	<description>Prueba JenkinsFile Maven</description>
+	<description>Prueba-JenkinsFile-Maven</description>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -25,6 +25,7 @@
 		</resources>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>

@@ -5,21 +5,23 @@
 	<artifactId>hello</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jenkins_pipeline_java_maven</name>
-	<description>For TTFHW of Jenkinsfile within a java project</description>
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>5.0</version>
-		</dependency>
-		<dependency>
+	<description>Prueba JenkinsFile Maven</description>
+	<plugins>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>5.0</version>
+			</dependency>
+		</dependencies>
+		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.8.0</version>
+			<version>3.8.1</version>
 			<configuration>
-			  	<source>1.6</source>
-			  	<target>1.6</target>
+				<source>1.8</source>
+				<target>1.8</target>
 			</configuration>
-		</dependency>
-	</dependencies>
+		</plugin>
+	</plugins>
 </project>
